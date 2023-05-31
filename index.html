@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Janelle Kiker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="fas fa-tree"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Welcome</h1>
+								<p>Hello! My name is Janelle Kiker and I am a previous educator turned Software Engineer. After being in the education field for about seven years in various roles, I realized it wasn't the right fit for me and now I enjoy FullStack Development. It's too hard to choose between Frontend and Backend, I like both!</p>
+								<p>Other than coding, I enjoy traveling, hiking, running, reading, discovering new music and binge watching a good series. <br /> Fun fact, the background on this website is a photo I took in Ebensee, Austria!</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#resume">Resume</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="projects">
+								<h2 class="major">Books and Quotes</h2>
+								<div>
+									<img class="mySlides1" src="images/books_and_quotes/homepage.png" style="width:100%">
+									<img class="mySlides1" src="images/books_and_quotes/bookList.png" style="width:100%">
+									<img class="mySlides1" src="images/books_and_quotes/bookDetail.png" style="width:100%">
+									<img class="mySlides1" src="images/books_and_quotes/createBook.png" style="width:100%">
+									<img class="mySlides1" src="images/books_and_quotes/createQuote.png" style="width:100%">
+									<img class="mySlides1" src="images/books_and_quotes/signup.png" style="width:100%">
+									<img class="mySlides1" src="images/books_and_quotes/login.png" style="width:100%">
+									<button class="w3-button w3-display-left" onclick="plusDivs1(-1)">prev</button>
+									<button class="w3-button w3-display-right" onclick="plusDivs1(+1)">next</button>
+								</div>
+								<script>
+									var slideIndex = 1;
+									showDivs1(slideIndex);
+
+									function plusDivs1(n) {
+									  showDivs1(slideIndex += n);
+									}
+
+									function showDivs1(n) {
+									  var i;
+									  var x = document.getElementsByClassName("mySlides1");
+									  if (n > x.length) {slideIndex = 1}
+									  if (n < 1) {slideIndex = x.length}
+									  for (i = 0; i < x.length; i++) {
+										x[i].style.display = "none";
+									  }
+									  x[slideIndex-1].style.display = "block";
+									}
+								</script>
+								<br />
+								<p>This is my very first personal project. I independently designed and built this web application to easily store books and book quotes all in one place. Once a user has an account, they can add their books and quotes.</p>
+								<h4>Technologies: Django4, Python3, HTML5, CSS</h4>
+								<ul class="actions stacked">
+									<li><a href="http://github.com/janellekiker/Books-and-quotes" class="button primary">View Code</a></li>
+								</ul>
+
+								<h2 class="major">CarCar</h2>
+								<div>
+									<img class="mySlides2" src="images/carcar/homepage.png" style="width:100%">
+									<img class="mySlides2" src="images/carcar/models.png" style="width:100%">
+									<img class="mySlides2" src="images/carcar/automobiles.png" style="width:100%">
+									<img class="mySlides2" src="images/carcar/salespersonHistory.png" style="width:100%">
+									<img class="mySlides2" src="images/carcar/appointments.png" style="width:100%">
+									<img class="mySlides2" src="images/carcar/createSale.png" style="width:100%">
+									<button class="w3-button w3-display-left" onclick="plusDivs2(-1)">prev</button>
+									<button class="w3-button w3-display-right" onclick="plusDivs2(+1)">next</button>
+								</div>
+								<script>
+									var slideIndex = 1;
+									showDivs2(slideIndex);
+
+									function plusDivs2(n) {
+									  showDivs2(slideIndex += n);
+									}
+
+									function showDivs2(n) {
+									  var i;
+									  var x = document.getElementsByClassName("mySlides2");
+									  if (n > x.length) {slideIndex = 1}
+									  if (n < 1) {slideIndex = x.length}
+									  for (i = 0; i < x.length; i++) {
+										x[i].style.display = "none";
+									  }
+									  x[slideIndex-1].style.display = "block";
+									}
+								</script>
+								<br />
+								<p>I collaborated with a partner following <strong>agile methology</strong> to create a car dealership website. I was in charge of the backend and frontend of the sales microservice and I also did the frontend for models and manufacturer APIs. We developed <strong>RESTful API</strong> endpoints and interacted with them using <strong>Insomnia</strong>. We also had a huge focus on separation and used <strong>Docker</strong> to create containers for each of our microserices. </p>
+								<h4>Technologies: React, JavaScript, Django4, Python3, PostgresSQL, Docker, Insomina, JSX, Bootstrap, HTML5, CSS</h4>
+								<ul class="actions stacked">
+									<li><a href="https://gitlab.com/janellekiker/carcar" class="button primary">View Code</a></li>
+								</ul>
+
+								<h2 class="major">Checkit *In progress*</h2>
+								<div>
+									<img class="mySlides3" src="images/checkit/normalHomepage.png" style="width:100%">
+									<img class="mySlides3" src="images/checkit/loggedinHomepage.png" style="width:100%">
+									<img class="mySlides3" src="images/checkit/searchResults.png" style="width:100%">
+									<img class="mySlides3" src="images/checkit/savedClaims.png" style="width:100%">
+									<img class="mySlides3" src="images/checkit/filteredClaims.png" style="width:100%">
+									<img class="mySlides3" src="images/checkit/login.png" style="width:100%">
+									<img class="mySlides3" src="images/checkit/signup.png" style="width:100%">
+									<button class="w3-button w3-display-left" onclick="plusDivs3(-1)">prev</button>
+									<button class="w3-button w3-display-right" onclick="plusDivs3(+1)">next</button>
+								</div>
+								<script>
+									var slideIndex = 1;
+									showDivs3(slideIndex);
+
+									function plusDivs3(n) {
+									  showDivs3(slideIndex += n);
+									}
+
+									function showDivs3(n) {
+									  var i;
+									  var x = document.getElementsByClassName("mySlides3");
+									  if (n > x.length) {slideIndex = 1}
+									  if (n < 1) {slideIndex = x.length}
+									  for (i = 0; i < x.length; i++) {
+										x[i].style.display = "none";
+									  }
+									  x[slideIndex-1].style.display = "block";
+									}
+								</script>
+								<br />
+								<p>I am currently working with four other engineers to design and build a fact checking website, using one of Google's Third-Party APIs. Anyone can search a claim to see if it's true or false, but a user can save claims based on categories they've created.</p>
+								<h4>Technologies: React, JavaScript, FastAPI, Python3, PostgresSQL, Docker, Swagger, JSX, Bootstrap, HTML5, CSS</h4>
+							</article>
+
+						<!-- Skills -->
+							<article id="skills">
+								<h2 class="major">Skills</h2>
+								<h4>Tools I am most familiar with and have used to build projects.</h4>
+								<ul>
+									<li>Python3</li>
+									<li>Javascript ES6+</li>
+									<li>PostgreSQL</li>
+									<li>React</li>
+									<li>React Hook</li>
+									<li>Redux Toolkit</li>
+									<li>Docker</li>
+									<li>Django4</li>
+									<li>MongoDB</li>
+									<li>FastAPI</li>
+									<li>Git</li>
+									<li>HTML5</li>
+									<li>CSS</li>
+									<li>RabbitMQ</li>
+									<li>DOM Manipulation</li>
+									<li>Websockets</li>
+								</ul>
+							</article>
+
+						<!-- Resume -->
+							<article id="resume">
+								<h2 class="major">Resume</h2>
+								<p>View my resume <a href="https://drive.google.com/file/d/12tqMJsQJyqwqw2V4uUlLso5lPJSEw57c/view?usp=sharing">here</a>.</p>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Get in Touch</h2>
+								<p>Send me an email: janellekiker@gmail.com</p>
+								<ul class="icons">
+									<li><a href="http://linkedin.com/in/janellekiker/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="http://github.com/janellekiker" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="http://gitlab.com/janellekiker" class="icon brands fa-gitlab"><span class="label">GitLab</span></a></li>
+								</ul>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Janelle Kiker</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
